@@ -15,6 +15,7 @@ const App = {
     this.initContactForm();
     this.initScrollToTop();
     this.initDynamicContent();
+    this.initHeroSlideshow();
     this.setCurrentYear();
   },
 
@@ -149,7 +150,7 @@ const App = {
     }, observerOptions);
 
     // Observe elements that should animate on scroll
-    const animateElements = document.querySelectorAll('.skill-card, .portfolio-card, .education__item');
+    const animateElements = document.querySelectorAll('.skill-card, .portfolio-card, .experience__card, .internship__card, .education__item');
     animateElements.forEach(function(el) {
       el.style.opacity = '0';
       el.style.transform = 'translateY(20px)';
@@ -308,6 +309,44 @@ const App = {
     if (contactEmailEl && contactInfo.email) {
       contactEmailEl.textContent = contactInfo.email;
     }
+
+    // Initialize internship data from service
+    this.initInternshipData();
+  },
+
+  /**
+   * Initialize internship section with data from service
+   */
+  initInternshipData: function() {
+    const internshipData = InternshipService.getInternshipData();
+    
+    const positionEl = document.getElementById('internshipPosition');
+    const companyEl = document.getElementById('internshipCompany');
+    const durationEl = document.getElementById('internshipDuration');
+    const hoursEl = document.getElementById('internshipHours');
+    
+    if (positionEl) positionEl.textContent = internshipData.position;
+    if (companyEl) companyEl.textContent = internshipData.company;
+    if (durationEl) durationEl.textContent = InternshipService.getFormattedDuration();
+    if (hoursEl) hoursEl.textContent = internshipData.hours + ' Hours';
+  },
+
+  /**
+   * Initialize hero image slideshow with fade effect
+   */
+  initHeroSlideshow: function() {
+    const slides = document.querySelectorAll('.hero__image-slide');
+    if (slides.length === 0) return;
+
+    let currentSlide = 0;
+
+    function showNextSlide() {
+      slides[currentSlide].classList.remove('active');
+      currentSlide = (currentSlide + 1) % slides.length;
+      slides[currentSlide].classList.add('active');
+    }
+
+    setInterval(showNextSlide, 3000);
   },
 
   /**

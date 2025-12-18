@@ -13,25 +13,22 @@ const SkillsService = {
       { name: 'CSS3', level: 'advanced', icon: 'css3' },
       { name: 'JavaScript', level: 'intermediate', icon: 'javascript' },
       { name: 'PHP', level: 'intermediate', icon: 'php' },
-      { name: 'Java', level: 'intermediate', icon: 'java' },
-      { name: 'Python', level: 'beginner', icon: 'python' }
+      { name: 'Java', level: 'intermediate', icon: 'java' }
+    ],
+    design: [
+      { name: 'Graphic Design', level: 'beginner', icon: 'design' },
+      { name: 'Video Editing', level: 'intermediate', icon: 'video' },
+      { name: 'Figma', level: 'intermediate', icon: 'figma' }
+    ],
+    technical: [
+      { name: 'Computer Literacy', level: 'advanced', icon: 'computer' },
+      { name: 'Typing Skills (90 WPM)', level: 'expert', icon: 'keyboard' },
+      { name: 'Git/GitHub', level: 'intermediate', icon: 'git' },
+      { name: 'MySQL', level: 'intermediate', icon: 'mysql' }
     ],
     frameworks: [
       { name: 'Bootstrap', level: 'advanced', icon: 'bootstrap' },
-      { name: 'Tailwind CSS', level: 'intermediate', icon: 'tailwind' },
-      { name: 'React', level: 'beginner', icon: 'react' }
-    ],
-    tools: [
-      { name: 'Git/GitHub', level: 'intermediate', icon: 'git' },
-      { name: 'VS Code', level: 'advanced', icon: 'vscode' },
-      { name: 'Figma', level: 'intermediate', icon: 'figma' },
-      { name: 'MySQL', level: 'intermediate', icon: 'mysql' }
-    ],
-    soft: [
-      { name: 'Problem Solving', level: 'advanced', icon: 'brain' },
-      { name: 'Team Collaboration', level: 'advanced', icon: 'team' },
-      { name: 'Communication', level: 'intermediate', icon: 'chat' },
-      { name: 'Time Management', level: 'intermediate', icon: 'clock' }
+      { name: 'Tailwind CSS', level: 'intermediate', icon: 'tailwind' }
     ]
   },
 
@@ -111,9 +108,9 @@ const SkillsService = {
       },
       byCategory: {
         programming: this.skills.programming.length,
-        frameworks: this.skills.frameworks.length,
-        tools: this.skills.tools.length,
-        soft: this.skills.soft.length
+        design: this.skills.design.length,
+        technical: this.skills.technical.length,
+        frameworks: this.skills.frameworks.length
       }
     };
   }

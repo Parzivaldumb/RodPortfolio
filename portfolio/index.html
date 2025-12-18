@@ -13,7 +13,7 @@
   <meta property="og:description" content="BSIT Student at Pamantasan ng Lungsod ng Valenzuela. Passionate about web development and technology.">
   
   <!-- Favicon -->
-  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="icon" type="image/jpeg" href="assets/images/johnrod_formal_pic.jpg">
   
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,7 +26,7 @@
   <link rel="stylesheet" href="css/components.css">
   <link rel="stylesheet" href="css/sections.css">
   
-  <title>Johnrod Legarto | Portfolio</title>
+  <title>John Rod Legarto | Portfolio</title>
 </head>
 <body>
   <!-- ===== HEADER ===== -->
@@ -40,6 +40,8 @@
         <a href="#about" class="nav__link">About</a>
         <a href="#skills" class="nav__link">Skills</a>
         <a href="#portfolio" class="nav__link">Portfolio</a>
+        <a href="#experience" class="nav__link">Experience</a>
+        <a href="#internship" class="nav__link">Internship</a>
         <a href="#education" class="nav__link">Education</a>
         <a href="#contact" class="nav__link">Contact</a>
       </nav>
@@ -81,6 +83,8 @@
     <a href="#about" class="nav-mobile__link">About</a>
     <a href="#skills" class="nav-mobile__link">Skills</a>
     <a href="#portfolio" class="nav-mobile__link">Portfolio</a>
+    <a href="#experience" class="nav-mobile__link">Experience</a>
+    <a href="#internship" class="nav-mobile__link">Internship</a>
     <a href="#education" class="nav-mobile__link">Education</a>
     <a href="#contact" class="nav-mobile__link">Contact</a>
   </nav>
@@ -97,20 +101,21 @@
             <span class="hero__badge-text">Available for opportunities</span>
           </div>
           <h1 class="hero__title">
-            Hi, I'm <span style="color: var(--color-accent);">Johnrod Legarto</span>
+            Hi, I'm <span style="color: var(--color-accent);">John Rod Legarto</span>
           </h1>
           <p class="hero__subtitle">
-            BSIT Student at Pamantasan ng Lungsod ng Valenzuela (PLV). Passionate about web development, programming, and creating digital solutions.
+            BSIT Student seeking opportunities for professional development. Passionate about programming, graphic design, and creating innovative digital solutions that make a difference.
           </p>
           <div class="hero__actions">
             <a href="#portfolio" class="btn btn--primary">View My Work</a>
+            <a href="assets/documents/Legarto_Resume.pdf" target="_blank" class="btn btn--secondary">View Resume</a>
             <a href="#contact" class="btn btn--secondary">Get In Touch</a>
           </div>
         </div>
         <div class="hero__image">
           <div class="hero__image-wrapper">
-            <!-- Placeholder for profile image - replace with actual image -->
-            <div style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; background: var(--color-surface); border-radius: var(--radius-full); font-size: 4rem; font-weight: 700; color: var(--color-accent);">JL</div>
+            <img src="assets/images/johnrod_formal_pic.jpg" alt="John Rod Legarto" class="hero__image-slide active" id="heroImage1" />
+            <img src="assets/images/johnrod_fav_icon.jpg" alt="John Rod Legarto" class="hero__image-slide" id="heroImage2" />
           </div>
         </div>
       </div>
@@ -133,24 +138,18 @@
         <div class="about__inner">
           <div class="about__image">
             <div class="about__image-wrapper">
-              <!-- Placeholder for about image -->
-              <div style="width: 350px; height: 400px; display: flex; align-items: center; justify-content: center; background: linear-gradient(135deg, var(--color-accent), var(--color-primary)); border-radius: var(--radius-lg); color: white; font-size: 2rem;">
-                <svg width="120" height="120" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
-                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
-                  <circle cx="12" cy="7" r="4"></circle>
-                </svg>
-              </div>
+              <img src="assets/images/johnrod_formal_pic.jpg" alt="John Rod Legarto" />
             </div>
           </div>
           <div class="about__content">
             <p class="about__text">
-              Hello! I'm <strong>Johnrod Legarto</strong>, a Bachelor of Science in Information Technology student at <strong>Pamantasan ng Lungsod ng Valenzuela (PLV)</strong>. I have a strong passion for technology and web development.
+              Hello! I'm <strong>John Rod Legarto</strong>, a 22-year-old Bachelor of Science in Information Technology student at <strong>Pamantasan ng Lungsod ng Valenzuela (PLV)</strong>. Born and raised in Valenzuela City, I have a strong passion for technology, programming, and creative design.
             </p>
             <p class="about__text">
-              I enjoy learning new technologies and building projects that solve real-world problems. My journey in IT has equipped me with skills in web development, programming, and database management.
+              I'm seeking a responsible position with opportunities for professional development, where I can utilize my strengths while continuously growing in the tech industry. My journey has equipped me with diverse skills including programming, graphic design, video editing, and expert typing skills with 90 WPM.
             </p>
             <p class="about__text">
-              When I'm not coding, I explore new technologies, participate in coding challenges, and collaborate with fellow students on various projects. I believe in continuous learning and improving my skills every day.
+              With hands-on experience from my internship at Food Machinery Industrial Corporation and seasonal work at Concentrix, I bring both technical expertise and real-world customer service skills. I believe in continuous learning and delivering quality results in every project I undertake.
             </p>
 
             <div class="about__highlights">
@@ -300,76 +299,128 @@
           </p>
         </div>
 
-        <div class="portfolio__grid" id="portfolioGrid">
-          <!-- Portfolio items will be populated by JavaScript -->
-          <!-- Fallback content -->
-          <article class="portfolio-card">
-            <div class="portfolio-card__image">
-              <div style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white;">
-                <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
-                  <line x1="8" y1="21" x2="16" y2="21"></line>
-                  <line x1="12" y1="17" x2="12" y2="21"></line>
-                </svg>
-              </div>
-            </div>
-            <div class="portfolio-card__content">
-              <span class="portfolio-card__category">Web Development</span>
-              <h3 class="portfolio-card__title">E-Commerce Website</h3>
-              <p class="portfolio-card__description">A full-stack e-commerce platform with shopping cart and admin dashboard.</p>
-              <div class="portfolio-card__tags">
-                <span class="portfolio-card__tag">HTML</span>
-                <span class="portfolio-card__tag">CSS</span>
-                <span class="portfolio-card__tag">JavaScript</span>
-                <span class="portfolio-card__tag">PHP</span>
-              </div>
-            </div>
-          </article>
+        <div class="portfolio__empty">
+          <div class="portfolio__empty-icon">
+            <svg width="120" height="120" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path>
+              <polyline points="13 2 13 9 20 9"></polyline>
+              <line x1="12" y1="18" x2="12" y2="12"></line>
+              <line x1="9" y1="15" x2="15" y2="15"></line>
+            </svg>
+          </div>
+          <h3 class="portfolio__empty-title">Projects Coming Soon</h3>
+          <p class="portfolio__empty-text">
+            I'm currently working on exciting projects that will be showcased here soon. Stay tuned for updates on my latest work in web development, design, and programming!
+          </p>
+          <div class="portfolio__empty-badge">
+            <span class="portfolio__empty-badge-dot"></span>
+            <span class="portfolio__empty-badge-text">In Development</span>
+          </div>
+        </div>
+      </div>
+    </section>
 
-          <article class="portfolio-card">
-            <div class="portfolio-card__image">
-              <div style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%); color: white;">
-                <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-                  <circle cx="9" cy="7" r="4"></circle>
-                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
-                  <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-                </svg>
-              </div>
-            </div>
-            <div class="portfolio-card__content">
-              <span class="portfolio-card__category">Web Application</span>
-              <h3 class="portfolio-card__title">Student Portal System</h3>
-              <p class="portfolio-card__description">A comprehensive student information system for managing grades and schedules.</p>
-              <div class="portfolio-card__tags">
-                <span class="portfolio-card__tag">HTML</span>
-                <span class="portfolio-card__tag">CSS</span>
-                <span class="portfolio-card__tag">JavaScript</span>
-                <span class="portfolio-card__tag">MySQL</span>
-              </div>
-            </div>
-          </article>
+    <!-- ===== JOB EXPERIENCE SECTION ===== -->
+    <section class="experience" id="experience">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge">
+            <span class="section-badge__dot"></span>
+            <span class="section-badge__text">Work Experience</span>
+          </div>
+          <h2 class="section-header__title">Professional Journey</h2>
+          <p class="section-header__subtitle">
+            Real-world experience in customer service and IT support
+          </p>
+        </div>
 
-          <article class="portfolio-card">
-            <div class="portfolio-card__image">
-              <div style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); color: white;">
-                <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                  <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
-                  <line x1="12" y1="18" x2="12.01" y2="18"></line>
-                </svg>
+        <div class="experience__content">
+          <div class="experience__card">
+            <div class="experience__header">
+              <div class="experience__info">
+                <h3 class="experience__position">Customer Service Representative</h3>
+                <p class="experience__company">Concentrix (Seasonal)</p>
+                <p class="experience__duration">October 2024 - April 2025</p>
+                <p class="experience__department">Retail & Credit - Voice Account</p>
               </div>
             </div>
-            <div class="portfolio-card__content">
-              <span class="portfolio-card__category">UI/UX Design</span>
-              <h3 class="portfolio-card__title">Mobile Banking UI</h3>
-              <p class="portfolio-card__description">Modern mobile banking interface design with focus on user experience.</p>
-              <div class="portfolio-card__tags">
-                <span class="portfolio-card__tag">Figma</span>
-                <span class="portfolio-card__tag">UI Design</span>
-                <span class="portfolio-card__tag">Prototyping</span>
+
+            <div class="experience__description">
+              <p>Provided exceptional customer service in a fast-paced retail and credit environment, handling voice communications with professionalism and efficiency. Developed strong communication skills and problem-solving abilities while managing customer inquiries and concerns.</p>
+            </div>
+
+            <div class="experience__skills">
+              <h4 class="experience__subtitle">Key Responsibilities</h4>
+              <ul class="experience__list">
+                <li>Handled customer inquiries and resolved issues efficiently</li>
+                <li>Maintained high customer satisfaction ratings</li>
+                <li>Processed retail and credit transactions accurately</li>
+                <li>Collaborated with team members to achieve department goals</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== INTERNSHIP SECTION ===== -->
+    <section class="internship" id="internship">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge">
+            <span class="section-badge__dot"></span>
+            <span class="section-badge__text">Internship Experience</span>
+          </div>
+          <h2 class="section-header__title">Professional Training</h2>
+          <p class="section-header__subtitle">
+            Hands-on experience in the IT industry
+          </p>
+        </div>
+
+        <div class="internship__content" id="internshipContent">
+          <div class="internship__card">
+            <div class="internship__header">
+              <div class="internship__logo">
+                <img src="assets/images/FMIC_LOGO.jpg" alt="Food Machinery Industrial Corporation" />
+              </div>
+              <div class="internship__info">
+                <h3 class="internship__position" id="internshipPosition">IT Tech</h3>
+                <p class="internship__company" id="internshipCompany">Food Machinery Industrial Corporation</p>
+                <p class="internship__duration" id="internshipDuration">June 2025 - October 2025</p>
+                <p class="internship__hours">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polyline points="12 6 12 12 16 14"></polyline>
+                  </svg>
+                  <span id="internshipHours">486 Hours</span>
+                </p>
               </div>
             </div>
-          </article>
+
+            <div class="internship__description" id="internshipDescription">
+              <p>Gained hands-on experience in IT support, system maintenance, and technical troubleshooting in an industrial manufacturing environment.</p>
+            </div>
+
+            <div class="internship__skills">
+              <h4 class="internship__subtitle">Skills Developed</h4>
+              <div class="internship__tags" id="internshipSkills">
+                <span class="internship__tag">Technical Support</span>
+                <span class="internship__tag">System Maintenance</span>
+                <span class="internship__tag">Hardware Troubleshooting</span>
+                <span class="internship__tag">Network Configuration</span>
+              </div>
+            </div>
+
+            <div class="internship__achievements">
+              <h4 class="internship__subtitle">Key Achievements</h4>
+              <ul class="internship__list" id="internshipAchievements">
+                <li>Completed 486 hours of intensive IT training</li>
+                <li>Provided technical support for manufacturing systems</li>
+                <li>Assisted in network infrastructure maintenance</li>
+                <li>Developed problem-solving skills in real-world scenarios</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -390,15 +441,9 @@
 
         <div class="education__timeline" id="educationTimeline">
           <div class="education__item">
-            <span class="education__year">2021 - Present</span>
+            <span class="education__year">2022 - 2026</span>
             <h3 class="education__degree">Bachelor of Science in Information Technology</h3>
             <p class="education__school">Pamantasan ng Lungsod ng Valenzuela (PLV)</p>
-          </div>
-
-          <div class="education__item">
-            <span class="education__year">2019 - 2021</span>
-            <h3 class="education__degree">Senior High School - STEM Strand</h3>
-            <p class="education__school">Senior High School, Valenzuela City</p>
           </div>
         </div>
       </div>
@@ -420,7 +465,7 @@
           <!-- Contact Links Grid -->
           <div class="contact__links-grid">
             <!-- Email -->
-            <a href="mailto:johnrod.legarto@example.com" class="contact__link-card">
+            <a href="mailto:johnrod.legarto50@gmail.com" class="contact__link-card">
               <div class="contact__link-icon contact__link-icon--email">
                 <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                   <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
@@ -428,7 +473,18 @@
                 </svg>
               </div>
               <span class="contact__link-label">Email</span>
-              <span class="contact__link-value">johnrod.legarto@example.com</span>
+              <span class="contact__link-value">johnrod.legarto50@gmail.com</span>
+            </a>
+
+            <!-- Mobile -->
+            <a href="tel:+639219888504" class="contact__link-card">
+              <div class="contact__link-icon contact__link-icon--phone">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+              </div>
+              <span class="contact__link-label">Mobile</span>
+              <span class="contact__link-value">+63 921 988 8504</span>
             </a>
 
             <!-- Facebook -->
@@ -543,6 +599,7 @@
   <script src="js/services/skillsService.js"></script>
   <script src="js/services/contactService.js"></script>
   <script src="js/services/educationService.js"></script>
+  <script src="js/services/internshipService.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
