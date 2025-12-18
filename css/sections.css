@@ -532,9 +532,39 @@
 }
 
 .experience__header {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--spacing-lg);
   margin-bottom: var(--spacing-xl);
   padding-bottom: var(--spacing-xl);
   border-bottom: 1px solid var(--color-border);
+}
+
+.experience__logo {
+  flex-shrink: 0;
+  width: 80px;
+  height: 80px;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--spacing-xs);
+}
+
+.experience__logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+@media (min-width: 641px) {
+  .experience__logo {
+    width: 100px;
+    height: 100px;
+  }
 }
 
 .experience__position {
@@ -1028,7 +1058,7 @@
 }
 
 /* Icon Colors */
-.contact__link-icon--email {
+.contact__link-icon--gmail {
   background: linear-gradient(135deg, #EA4335, #FBBC04);
 }
 

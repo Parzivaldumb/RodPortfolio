@@ -29,6 +29,27 @@
   <title>John Rod Legarto | Portfolio</title>
 </head>
 <body>
+  <!-- ===== LOADING SCREEN ===== -->
+  <div class="loading-screen" id="loadingScreen">
+    <div class="loading-screen__particles">
+      <div class="loading-screen__particle"></div>
+      <div class="loading-screen__particle"></div>
+      <div class="loading-screen__particle"></div>
+      <div class="loading-screen__particle"></div>
+      <div class="loading-screen__particle"></div>
+    </div>
+    <div class="loading-screen__content">
+      <div class="loading-screen__logo-wrapper">
+        <div class="loading-screen__logo">JL</div>
+        <div class="loading-screen__ring"></div>
+      </div>
+      <div class="loading-screen__progress">
+        <div class="loading-screen__progress-bar"></div>
+      </div>
+      <p class="loading-screen__text">Loading<span class="loading-screen__dots"></span></p>
+    </div>
+  </div>
+
   <!-- ===== HEADER ===== -->
   <header class="header" id="header">
     <div class="container header__inner">
@@ -337,6 +358,9 @@
         <div class="experience__content">
           <div class="experience__card">
             <div class="experience__header">
+              <div class="experience__logo">
+                <img src="assets/images/concentrix_logo.jpg" alt="Concentrix Logo" />
+              </div>
               <div class="experience__info">
                 <h3 class="experience__position">Customer Service Representative</h3>
                 <p class="experience__company">Concentrix (Seasonal)</p>
@@ -464,15 +488,14 @@
 
           <!-- Contact Links Grid -->
           <div class="contact__links-grid">
-            <!-- Email -->
+            <!-- Gmail -->
             <a href="mailto:johnrod.legarto50@gmail.com" class="contact__link-card">
-              <div class="contact__link-icon contact__link-icon--email">
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                  <polyline points="22,6 12,13 2,6"></polyline>
+              <div class="contact__link-icon contact__link-icon--gmail">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/>
                 </svg>
               </div>
-              <span class="contact__link-label">Email</span>
+              <span class="contact__link-label">Gmail</span>
               <span class="contact__link-value">johnrod.legarto50@gmail.com</span>
             </a>
 
@@ -499,7 +522,7 @@
             </a>
 
             <!-- LinkedIn -->
-            <a href="#" class="contact__link-card" target="_blank" rel="noopener noreferrer">
+            <a href="https://ph.linkedin.com/in/johnrod-legarto-894615333" class="contact__link-card" target="_blank" rel="noopener noreferrer">
               <div class="contact__link-icon contact__link-icon--linkedin">
                 <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
                   <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
@@ -508,11 +531,11 @@
                 </svg>
               </div>
               <span class="contact__link-label">LinkedIn</span>
-              <span class="contact__link-value">Connect with me</span>
+              <span class="contact__link-value">Johnrod Legarto</span>
             </a>
 
             <!-- GitHub -->
-            <a href="#" class="contact__link-card" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/Parzivaldumb" class="contact__link-card" target="_blank" rel="noopener noreferrer">
               <div class="contact__link-icon contact__link-icon--github">
                 <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
                   <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
@@ -523,7 +546,7 @@
             </a>
 
             <!-- Instagram -->
-            <a href="#" class="contact__link-card" target="_blank" rel="noopener noreferrer">
+            <a href="https://instagram.com/kuroobloorp" class="contact__link-card" target="_blank" rel="noopener noreferrer">
               <div class="contact__link-icon contact__link-icon--instagram">
                 <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                   <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
@@ -532,7 +555,7 @@
                 </svg>
               </div>
               <span class="contact__link-label">Instagram</span>
-              <span class="contact__link-value">@johnrod.legarto</span>
+              <span class="contact__link-value">@kuroobloorp</span>
             </a>
 
             <!-- Location -->

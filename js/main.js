@@ -9,6 +9,7 @@ const App = {
    * Initialize the application
    */
   init: function() {
+    this.initLoadingScreen();
     this.initTheme();
     this.initNavigation();
     this.initScrollEffects();
@@ -17,6 +18,21 @@ const App = {
     this.initDynamicContent();
     this.initHeroSlideshow();
     this.setCurrentYear();
+  },
+
+  /**
+   * Initialize loading screen
+   */
+  initLoadingScreen: function() {
+    const loadingScreen = document.getElementById('loadingScreen');
+    if (loadingScreen) {
+      // Hide loading screen after page loads
+      window.addEventListener('load', function() {
+        setTimeout(function() {
+          loadingScreen.classList.add('hidden');
+        }, 1500); // Show loading for at least 1.5 seconds
+      });
+    }
   },
 
   /**
